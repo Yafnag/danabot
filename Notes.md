@@ -89,7 +89,9 @@ Danabot version : 2278
 Affiliate ID : 5
 
 Tor url : ockiwumgv77jgrppj4na362q4z6flsm3uno5td423jj4lj2f2meqt6ad.onion
+
 Embedded hash : 53A62D36E50FDF73AB591B6B2B27BCAB
+
 Magic number concatenated with the hash used to get the main module decrypt key : 25
 
 - C2_1 : 5.9.224.217:443
