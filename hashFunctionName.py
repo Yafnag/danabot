@@ -38,5 +38,5 @@ if __name__ == "__main__":
         hashVal = main(functionName)
         print(f"Function name : {functionName} -> Hash : {hashVal}")
     else:
-        print("[!] This script should be used with one argument : the function name")
+        print("[!] This script must be used with one argument : the function name")
         exit(1)

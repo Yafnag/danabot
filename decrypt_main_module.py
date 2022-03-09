@@ -34,6 +34,6 @@ if __name__ == "__main__":
         # main("53A62D36E50FDF73AB591B6B2B27BCAB", "25")
         main(embeddedHash, magicInt, encryptedMainModule)
     else:
-        print("[!] This script takes 3 arguments : the embedded hash, the int value to concat with the hash and the encrypted main module filename. ")
+        print("[!] This script takes 3 arguments : the embedded hash, the int value to concat with the hash and the encrypted main module filename. E.g : python decrypt_main_moodule.py 53A62D36E50FDF73AB591B6B2B27BCAB 25 encryptedMainModule.bin")
         exit()
     
