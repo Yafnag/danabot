@@ -8,8 +8,8 @@ The downloader and the main module embeds the same changes, new api hashing, the
 Like in the previous version, many strings are constructed char by char, this new version also embeds API hashing to resolve windows API functions when needed. 
 
 
-![api_hashing](api_hashing.png)
-*Resolve VirtualAllocEx address then call this function, there are many similar functions*
+![api_hashing](img/api_hashing.png)
+*Resolve VirtualAllocEx address then call this function*
 
 This version also embeds shellcode tricks to modify the instruction pointer. 
 ```
@@ -23,7 +23,7 @@ This version also embeds shellcode tricks to modify the instruction pointer.
 The downloader acts now differently, it creates a process then performs code injection. The injected code is in charge of downloading the main module.
 
 
-![Process_tree](Process_tree.JPG)
+![Process_tree](img/Process_tree.JPG)
 
 
 ### Communication with the c2
@@ -78,7 +78,7 @@ The AES256 key used to decrypt the main module is obtained through `CryptDeriveK
 
 ## Main module configuration
 The C&Cs ip addresses and ports are now constructed char by char, then concatenated and finally converted to an integer.
-![c2_ips](c2_ips.png)
+![c2_ips](img/c2_ips.png)
 
 
 ## Sample analyzed
