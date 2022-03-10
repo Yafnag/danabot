@@ -77,10 +77,15 @@ The AES256 key used to decrypt the main module is obtained through `CryptDeriveK
 ```
 
 ## Main module configuration
-The C&Cs ip addresses and ports are now constructed char by char, then concatenated and finally converted to an integer.
+The main module configuration has the same data as the previous version.
+
+![mainModuleConfig](img/mainModuleConfig.JPG)
+
+The C&Cs ip addresses and ports are now constructed one char at a time, then concatenated and finally converted to an integer.
 
 
 ![c2_ips](img/c2_ips.png)
+
 
 
 ## Sample analyzed
