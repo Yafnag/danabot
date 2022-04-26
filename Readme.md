@@ -1,7 +1,7 @@
 # Danabot update : version 2278
 
 One year after the blog post made by @proofpoint about #Danabot update, Danabot has been recently subject to a new update.
-The downloader and the main module embeds the same changes, new api hashing, the configuration is stored differently, anti reverse engineering tricks... These notes will be mainly focused on the downloader.
+The downloader and the main module embed the same changes, new api hashing, the configuration is stored differently, anti reverse engineering tricks... These notes will be mainly focused on the downloader.
 
 ## Downloader 
 ### Anti-analysis 
@@ -44,7 +44,7 @@ Once decoded we can notice some values :
 
 
 ### Main module decryption
-The embedded hash previously stored directly in the binary, is now constructed char by char. It is used to decrypt the main module. The hash is concatenated with an integer value previously converted to string (each hash has a different integer value), then passed to a md5 hexdigest function. 
+The embedded hash previously stored directly in the binary, is now constructed one char at a time. It is used to decrypt the main module. The hash is concatenated with an integer value previously converted to string (each hash has a different integer value), then passed to a md5 hexdigest function. 
 
 
 The AES256 key used to decrypt the main module is obtained through `CryptDeriveKey` based on the MD5 of the uppercase hex digest of the embedded hash concatenated with an integer value. Once decrypted the main module is compressed using ZIP.
